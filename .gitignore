@@ -1,0 +1,9 @@
+# this .gitignore file keeps all the unwanted eclipse files
+# and the mary log files out of the repository
+*~
+.settings/
+.classpath
+.project
+bin/
+doc/
+log/

@@ -1,0 +1,58 @@
+MARYSPEAK(1)                     General Commands Manual                       MARYSPEAK(1)
+
+
+NAME
+       maryspeak - A command line interface for the MaryTTS software speech synthesizer
+
+SYNOPSIS
+       maryspeak [options] [words]
+
+DESCRIPTION
+       maryspeak is a command line interface for the Mary-TTS software speech synthesizer 
+       for German, English, and some other languages.
+
+OPTIONS
+       -d --debug
+              Show debug messages on stdout
+       
+       -ffile Text file to speak.
+
+       -g     Open the MaryTTS Java GUI
+
+       -h, --help
+              Show summary of options.
+
+       --host[=hostname]
+              Sets the hostname for connection to a MaryTTS server. 
+       
+              If --hosts is used without the hostname set, localhost is assumed. If not set a 
+              MaryTTS service is instantiated within the context of the command.
+              
+       -i --stdin
+              Read text input from stdin instead of a file
+
+              If neither -f nor --stdin, words are spoken, or if none then text is spoken from
+              stdin, each line separately.
+
+       -o --stdout
+              Write speech output to stdout.
+              
+       --port=nn
+              Sets the port for connection to a MaryTTS server. This will default to 59125 if
+              this is not used.
+
+       -vvoicename
+              Use voice file of this name from maryspeak-data/voices. Available voices can be 
+              displayed with --voices
+
+       --voices
+              Lists the available voices
+
+       --version
+              Show version information.
+
+       -wfile Write output to this WAV file, rather than speaking it directly.
+
+AUTHOR
+       Steve Bickle
+       

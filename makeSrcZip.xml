@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maryspeak.makedoczip" default="makedoczip" basedir=".">
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: buildJavadoc                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="buildJavadoc">
+            <javadoc sourcepath="src/" 
+            	packagenames="maryspeak.*"
+             	destdir="doc/" />
+    </target>
+
+  	<target name ="makedoczip" description="Create a zipped up javadoc" depends="buildJavadoc">
+    	<zip destfile="maryspeakJavadoc.zip" >
+    		<fileset dir="" >
+    			<include name="doc/**"/>
+			</fileset>
+    	</zip>
+  	</target>
+</project>
