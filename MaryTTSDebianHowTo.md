@@ -1,7 +1,7 @@
 ### MaryTTS voice synthesizer How to for Debian ###
 
 Mary Text To Speech logoMaryTTS is an open-source, multilingual Text-to-Speech 
-Synthesis platform written in Java (homepage <http://mary.dfki.de/>). I’ve taken 
+Synthesis platform written in Java (homepage <http://mary.dfki.de/>). Iâ€™ve taken 
 an interest in it after it was featured on [Hacker Public Radio Episode 1599](http://hackerpublicradio.org/eps.php?id=1599). 
 As a Java program it should run anywhere, however here is how to get it to 
 work on a Debian Linux machine.
